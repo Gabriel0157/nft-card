@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --dark-blue-main: #0d192b;
+    --dark-blue-card: #14253d;
+    --dark-blue-line: #2f415b;
+    --cyan-50: #00fff7;
+    --cyan-100: hsla(178, 100%, 50%, 50%);
+    --soft-blue: #8bacda;
+}
+
+body {
+    background: var(--dark-blue-main);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-blue);
+}
+
+section {
+    background: var(--dark-blue-card);
+    width: 20.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    /* 1rem = 16px */
+}
+
+.equilibrium {
+    width: 17.375rem;
+    height: 17.375rem;
+    margin-bottom: 1.5rem;
+}
+
+.equilibrium>img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.equilibrium-view {
+    position: absolute;
+    background: var(--cyan-100);
+    width: inherit;
+    height: inherit;
+    border-radius: 0.5rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.equilibrium-view img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.equilibrium:hover .equilibrium-view {
+    display: flex;
+    cursor: pointer;
+}
+
+
+.description {
+    margin-bottom: 1.5rem;
+}
+
+.description h1 {
+    font-size: 1.375;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.description h1:hover {
+    color: var(--cyan-50);
+    cursor: pointer;
+}
+
+.description p {
+    line-height: 1.625rem;
+    font-weight: 300;
+}
+
+.informations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.informations img {
+    margin-right: 0.5rem;
+}
+
+.ethereum,
+.time {
+    display: flex;
+}
+
+.ethereum img {
+    width: 0.5rem;
+}
+
+.ethereum p {
+    font-weight: 600;
+    color: var(--cyan-50);
+}
+
+.time img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+hr {
+    border-color: var(--dark-blue-line);
+    margin-bottom: 1rem;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.creator img {
+    width: 2rem;
+    margin-right: 1rem;
+    border: 1px solid #fff;
+    /*sempre seguir essa ordem de borda: espessura > tipo > cor*/
+    border-radius: 50%;
+    /*deixar borda redonda*/
+}
+
+.creator p span {
+    /*span seleciona somente a palavra que deseja no html*/
+    color: #fff;
+}
+
+.creator p span:hover {
+    cursor: pointer;
+    color: var(--cyan-50);
+}
